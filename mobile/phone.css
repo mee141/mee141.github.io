@@ -1,48 +1,40 @@
-body {
-  background-color: #FF8400;
+html { /* all things follow these param */
+  font-size: 50px;
+  font-family: Arial;
+  color: black;
+  background-color: #ff8400;/* orange */
 }
 
 h1 {
-  font-family: Arial;
-  color: #000000;
   margin-left: 15px;
   font-size: 50px;
 }
 h2 {
-  font-family: Arial;
   color: white;
   font-size: 150%;
 }
 
 h4 {
-  font-family: Arial;
-  color: black;
   margin-left:15px;
   font-size: 45px;
 }
 
 h5 {
-  font-family: Arial;
-  color: black;
   margin-left:15px;
   font-size: 25px;
 }
 
 h6 {
-  font-family: Arial;
-  color: black;
   margin-left:15px;
   font-size: 25px;
   padding-right: 5px;
 }
 
 label {
-  font-family: Arial;
   font-size: 30px;
 }
 
 p {
-  font-family: Arial;
   font-size: 100px;
   margin-left: 25px;
 }
@@ -50,7 +42,6 @@ p {
 table, td, th {
   border: 3px solid;
   border-collapse: collapse;
-  color: #000000; /* black */
   padding: 0px;
 }
 
