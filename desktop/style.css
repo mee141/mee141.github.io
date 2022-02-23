@@ -1,0 +1,108 @@
+html { /* all things follow these param */
+    font-size: 20px;
+    font-family: Arial;
+    color: black;
+    background-color: #ff8400;/* orange */
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    color: #fff;/* white */
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+h5 {
+    font-size: 0.8rem;
+}
+
+H6 {
+    font-size: 10px;
+}
+
+iframe{
+    text-align: right;
+}
+
+img {
+ width: 240px;
+ height: 240px;
+ border: 4px solid #000;/* black */
+ border-radius: 20px; /* makes th edges rounded */
+}
+
+table, td, tr {
+    border: 1px solid #000;/* black */
+    border-collapse: collapse; /* causes the borders to collapse on each other. other wise there would be 2 borders */
+    padding: 4px;
+}
+
+div.animation {
+    position: relative;
+    animation-duration: 2s;
+    animation-name: side; /* triggers the keyframes */
+  }
+
+a:hover {
+    text-decoration: none;
+}
+
+.imageContainer > img:hover {
+    width: 50%;
+    height: 50%;
+}
+
+.main {
+    margin-left: 200px; 
+    padding: 0px 0px;
+}
+
+.borderimg{
+    width: 20%;
+    height: 20%;
+}
+
+.noborderimg{
+    border: 0px solid #000; /* black */
+    width: 40%;
+    height: 40%;
+}
+
+.vakex {
+    color: #00f;/* blue */
+}
+
+.sidenav {
+    height: 100%;
+    width: 175px;
+    position: fixed; /* sets the position of the object fixed */
+    z-index: 1; /* tells what has a proirity on whats showed on top */
+    top: 0px;
+    left: 0px;
+    background-color: #181818; /* dark grey */
+    overflow-x: hidden;/* tells what to do if the text or anything is outside on the x axis */
+    padding-top: 20px;
+  }
+
+.sidenav a {
+    padding: 0px 8px 0px 16px;
+    text-decoration: none;
+    color: #818181; /* light grey */
+    display: inline-block; ;
+}
+
+#side {
+    margin-left:10px; 
+    border:3px solid grey;
+    background: #323232; /* dark grey */
+    border-radius: 10px;
+}
+  
+@keyframes side {
+    from {top: 30%;}
+    to {top: 0px;}
+}

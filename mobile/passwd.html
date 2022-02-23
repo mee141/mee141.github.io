@@ -1,0 +1,40 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Natan</title>
+    <link rel="stylesheet" type="text/css" href="phone.css"> <!-- refers to phone.css -->
+    <meta charset="UTF-8">
+</head>
+<body>
+
+   <!-- side bar --> 
+  <div class="sidenav">
+        <br><br><br><br><br><br>
+      <a href="homephone.html "><h2 id="side"> back </h2></a>
+
+  </div>
+
+  <!-- main text -->
+<div class="main">
+    
+  <form>
+    <label for="pswd">Enter the password: </label>
+    <input type="password" id="pswd"> <!-- makes a box where you can type and is hidden text and sets the id pswd -->
+    <input type="button" value="Submit" onclick="pass();" /> <!-- on click execute function pass -->
+  </form>
+    <!-- Function to check -->
+  <script type="text/javascript">
+    function pass() { /* starts function pass */
+        var confirmPassword = "kip"; /* set variable confirmPassword */
+        var password = document.getElementById("pswd").value; /* */
+        if (password == confirmPassword) {
+             window.location="tab4.html"; /* if password equals the variable confirmPassword go to tab4.html */
+        }
+        else{
+            alert("Password incorrect"); /* if the if statement is false alert Password incorrect */
+        }
+    }
+  </script>
+</div>
+</body>
+</html>
