@@ -1,130 +1,108 @@
 html { /* all things follow these param */
-  font-size: 50px;
+  font-size: 20px;
   font-family: Arial;
   color: black;
   background-color: #ff8400;/* orange */
 }
 
 h1 {
-  margin-left: 15px;
-  font-size: 50px;
-}
-h2 {
-  color: white;
-  font-size: 150%;
+  text-align: center;
+  margin: 10px;
 }
 
-h4 {
-  margin-left:15px;
-  font-size: 45px;
+h2 {
+  color: #fff;/* white */
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 h5 {
-  margin-left:15px;
-  font-size: 25px;
+  font-size: 0.8rem;
 }
 
-h6 {
-  margin-left:15px;
-  font-size: 25px;
-  padding-right: 5px;
+H6 {
+  font-size: 10px;
 }
 
-label {
-  font-size: 30px;
-}
-
-p {
-  font-size: 100px;
-  margin-left: 25px;
-}
-
-table, td, th {
-  border: 3px solid;
-  border-collapse: collapse;
-  padding: 0px;
-}
-
-.vakex {
-  color: #0400ff ;
-}
-div.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 120px;
-}
-.caption {
-    display: block;
-    font-size: 20px;
+iframe{
+  text-align: right;
 }
 
 img {
-  border: 4px solid black;
-  width: 200px;
-  height: 200px;
+width: 240px;
+height: 240px;
+border: 4px solid #000;/* black */
+border-radius: 20px; /* makes th edges rounded */
 }
 
-.img2  {
-  border: 0px ;
+table, td, tr {
+  border: 1px solid #000;/* black */
+  border-collapse: collapse; /* causes the borders to collapse on each other. other wise there would be 2 borders */
+  padding: 4px;
+}
+
+div.animation {
+  position: relative;
+  animation-duration: 2s;
+  animation-name: side; /* triggers the keyframes */
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.imageContainer > img:hover {
+  width: 50%;
+  height: 50%;
+}
+
+.main {
+  margin-left: 200px; 
+  padding: 0px 0px;
+}
+
+.borderimg{
+  width: 20%;
+  height: 20%;
+}
+
+.noborderimg{
+  border: 0px solid #000; /* black */
   width: 40%;
   height: 40%;
-
 }
 
-.img1  {
- border: 4px solid black ;
-  width: 500px;
-  height: 100%; 
-}
-
-#side {
-  color: white;
-  margin-left:10px;
-  border:2px solid grey;
-  background: #323232;
-  font-size: 50px;
-}
-
-link {
-  color:blue;
-  margin-left:20px;
-  border:20px;
+.vakex {
+  color: #00f;/* blue */
 }
 
 .sidenav {
   height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
+  width: 175px;
+  position: fixed; /* sets the position of the object fixed */
+  z-index: 1; /* tells what has a proirity on whats showed on top */
   top: 0px;
   left: 0px;
-  background-color: #181818;
-  overflow-x: hidden;
+  background-color: #181818; /* dark grey */
+  overflow-x: hidden;/* tells what to do if the text or anything is outside on the x axis */
   padding-top: 20px;
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 0px 8px 0px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
+  color: #818181; /* light grey */
   display: inline-block; ;
 }
 
-.sidenav a:hover {
-  color: #323232;
+#side {
+  margin-left:10px; 
+  border:3px solid #818181; /* light grey */
+  background: #323232; /* dark grey */
+  border-radius: 10px;
 }
 
-.main {
-  margin-left: 300px; 
-  font-size: 7px; /* Increased text to enable scrolling */
-  padding: 0px 0px;
+@keyframes side {
+  from {top: 30%;}
+  to {top: 0px;}
 }
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
