@@ -17,7 +17,7 @@ h2 {
 }
 
 h5 {
-  font-size: 0.8rem;
+  font-size: 15px;
 }
 
 H6 {
@@ -29,8 +29,6 @@ iframe{
 }
 
 img {
-width: 50%;
-height: 50%;
 border: 4px solid #000;/* black */
 border-radius: 20px; /* makes th edges rounded */
 }
@@ -39,6 +37,7 @@ table, td, tr {
   border: 1px solid #000;/* black */
   border-collapse: collapse; /* causes the borders to collapse on each other. other wise there would be 2 borders */
   padding: 4px;
+  margin: 10px;
 }
 
 div.animation {
