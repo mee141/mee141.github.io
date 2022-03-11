@@ -42,7 +42,7 @@ table, td, tr {
 
 div.animation {
   position: relative;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: side; /* triggers the keyframes */
 }
 
@@ -61,8 +61,8 @@ a:hover {
 }
 
 .borderimg{
-  width: 20%;
-  height: 20%;
+  width: 100px;
+  height: 100px;
 }
 
 .noborderimg{
